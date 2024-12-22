@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { MUSDT_ADDRESS, THE_GRAPH_URL } from './constants';
-import { formatCurrency as formatCurrency, getImage } from './utils';
-import stablecoinAbi from './stablecoinAbi';
+import { MUSDT_ADDRESS, THE_GRAPH_URL } from '../contracts/addresses';
+import { formatCurrency as formatCurrency, getImage } from '../utils';
+import stablecoinAbi from '../contracts/abis/stablecoinAbi';
 import Web3, { TransactionReceipt } from 'web3';
 
 interface Balance {

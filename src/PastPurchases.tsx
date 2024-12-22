@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { THE_GRAPH_URL } from './constants';
 import { formatCurrency, getImage } from './utils';
 import toast from 'react-hot-toast';
+import { THE_GRAPH_URL } from './contracts/addresses';
 
 interface Product {
   createdAt: string;

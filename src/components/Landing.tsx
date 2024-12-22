@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import Web3 from 'web3';
-import stablecoinAbi from './stablecoinAbi';
-import { MUSDT_ADDRESS } from './constants';
+import stablecoinAbi from '../contracts/abis/stablecoinAbi';
+import { MUSDT_ADDRESS } from '../contracts/addresses';
 import { Link } from 'react-router-dom';
 
 interface MyProps {

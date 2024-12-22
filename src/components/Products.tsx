@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import Web3 from 'web3';
-import { THE_GRAPH_URL, MUSDT_PAYMASTER_ADDRESS, DEWORLD_ADDRESS, MUSDT_ADDRESS } from './contracts/addresses'; 
-import usePaymasterAsync from './hooks/usePaymasterAsync'; 
-import deworldAbi from './contracts/abis/deworldAbi';
-import stablecoinAbi from './contracts/abis/stablecoinAbi';
-import { formatCurrency, getImage } from './utils';
+import { THE_GRAPH_URL, MUSDT_PAYMASTER_ADDRESS, DEWORLD_ADDRESS, MUSDT_ADDRESS } from '../contracts/addresses'; 
+import usePaymasterAsync from '../hooks/usePaymasterAsync'; 
+import deworldAbi from '../contracts/abis/deworldAbi';
+import stablecoinAbi from '../contracts/abis/stablecoinAbi';
+import { formatCurrency, getImage } from '../utils';
 
 interface Product {
   id: string;

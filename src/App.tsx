@@ -1,13 +1,12 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
-import Landing from './Landing';
-import Products from './Products';
-import PurchaseDetails from './PurchaseDetails';
-import Web3 from 'web3';
+import Landing from './components/Landing';
+import Products from './components/Products';
+import PurchaseDetails from './components/PurchaseDetails';import Web3 from 'web3';
 import { formatCurrency } from './utils';
-import stablecoinAbi from './stablecoinAbi';
-import { MUSDT_ADDRESS } from './constants';
+import { MUSDT_ADDRESS } from './contracts/addresses';
+import stablecoinAbi from './contracts/abis/stablecoinAbi';
 import PastPurchases from './PastPurchases';
 
 const ZKSYNC_SEPOLIA_CHAIN_ID = "0x12c"; // Chain ID for zkSync Sepolia (in hex)
